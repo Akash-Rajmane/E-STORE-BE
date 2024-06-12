@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",                   // Specifies the ECMAScript target version.
+    "module": "nodenext",                 // Specifies the module code generation.
+    "moduleResolution": "nodenext",           // Specifies how modules are resolved.
+    "allowJs": true,                      // Allows JavaScript files to be included.
+    "checkJs": true,                      // Enables type checking on JavaScript files.
+    "baseUrl": "./",                      // Base directory to resolve non-relative module names.
+    "paths": {                            // A series of entries which re-map imports to lookup locations.
+      "@/*": ["src/*"]                    // Simplifies importing files with a root alias.
+    },
+    "rootDir": "src",                     // Specifies the root directory of input files.
+    "outDir": "dist",                     // Redirects output structure to the directory.
+    "strict": true,                       // Enable all strict type-checking options.
+    "esModuleInterop": true,              // Enables emit interoperability between CommonJS and ES Modules.
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file.
+    "skipLibCheck": true                  // Skip type checking of all declaration files.
+  },
+  "include": ["src/**/*"],                // Include all files in the src directory.
+  "exclude": ["node_modules", ".cache", "build", "**/dist/*",] // Exclude directories that should not be type-checked.
+}
+
+
